@@ -1,0 +1,85 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            /* A beautiful mesh gradient background */
+            background: linear-gradient(45deg, #ee9ca7 0%, #ffdde1 100%);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .calculator {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(15px); /* This creates the frosted glass look */
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 25px;
+            padding: 25px;
+            width: 320px;
+            box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+        }
+
+        #display {
+            width: 100%;
+            height: 60px;
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            text-align: right;
+            padding: 0 15px;
+            font-size: 2rem;
+            color: #444;
+            outline: none;
+        }
+
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+        }
+
+        button {
+            height: 55px;
+            border: none;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.3);
+            color: #444;
+            font-size: 1.2rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        /* Hover effect to make it feel interactive */
+        button:hover {
+            background: rgba(255, 255, 255, 0.5);
+            transform: translateY(-2px);
+        }
+
+        button:active {
+            transform: translateY(0px);
+        }
+
+        /* Special styling for operator buttons */
+        .operator {
+            background: rgba(255, 255, 255, 0.5);
+            color: #d16b7d;
+        }
+
+        /* Styling for the Equals button */
+        .equal-btn {
+            background: #d16b7d;
+            color: white;
+            grid-column: span 2; /* Makes the button wider */
+        }
+
+        .equal-btn:hover {
+            background: #bb5a6b;
+        }

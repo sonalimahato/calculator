@@ -4,7 +4,7 @@ A beautiful, responsive, and functional calculator web app featuring **Glassmorp
 
 
 ## 🚀 Live Demo
-![Calculator Screenshot]()
+![Calculator Screenshot](https://github.com/sonalimahato/calculator/blob/main/preview.jpeg)
 Check out the live project here: (https://sonalimahato.github.io/calculator/)
 
 
